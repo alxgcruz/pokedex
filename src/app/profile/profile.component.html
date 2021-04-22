@@ -1,0 +1,41 @@
+<div class="profile">
+  <div class="header p-24" fxLayout="column" fxLayoutAlign="center center" fxLayout.gt-sm="row" fxScroll
+    fxLayoutAlign.gt-sm="space-between end">
+
+    <div class="name">
+      {{profile.firstName}} {{profile.lastName}}
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="about-content" fxLayout="column" fxFlex="100" fxFlex.gt-sm="50" fxFlex.gt-md="65">
+
+      <div class="profile-box info-box general" fxLayout="column">
+
+        <div class="content">
+          <div class="info-line">
+            <div class="title">Nombre(s)</div>
+            <div class="info">{{profile.firstName}}</div>
+          </div>
+
+          <div class="info-line">
+            <div class="title">Apellido(s)</div>
+            <div class="info">{{profile.lastName}}</div>
+          </div>
+
+          <div class="info-line">
+            <div class="title">Teléfono</div>
+            <div class="info">{{profile.tel}}</div>
+          </div>
+
+          <div class="info-line">
+            <div class="title">Correo</div>
+            <div class="info">{{profile.email}}</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

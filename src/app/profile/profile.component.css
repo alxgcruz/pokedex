@@ -1,0 +1,46 @@
+.header {
+  height: 30vh;
+  min-height: 30vh;
+  max-height: 30vh;
+  background: url('/assets/images/dark-material-bg.jpg') no-repeat 0 45%;
+  background-size: cover;
+}
+.name {
+  font-size: 34px;
+  color: #ffffff;
+  position: absolute;
+  top: 120px;
+  left: 24px;
+  line-height: 1;
+}
+
+
+.profile-box {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+header {
+  padding: 16px;
+  font-size: 17px;
+}
+
+.more {
+  cursor: pointer;
+}
+
+.content {
+  padding: 16px;
+}
+
+.info-line {
+  margin-bottom: 24px;
+}
+.info-line:last-child {
+  margin-bottom: 0;
+}
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 4px;
+}

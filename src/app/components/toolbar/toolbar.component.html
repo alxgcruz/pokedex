@@ -1,0 +1,11 @@
+<mat-toolbar color="light">
+  <mat-toolbar-row>
+    <button mat-icon-button aria-label="Abrir perfil" (click)="onBack()" *ngIf="showButton">
+      <mat-icon>arrow_back_ios_new</mat-icon>
+    </button>
+    <span *ngIf="!showButton">{{title}}</span>
+    <span class="spacer"></span>
+    <button mat-icon-button aria-label="Abrir perfil" [routerLink]="['/profile']">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+</mat-toolbar-row>

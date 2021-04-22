@@ -1,0 +1,29 @@
+<div class="content">
+
+  <div class="header accent p-16 p-sm-24" fxLayout="column" fxLayoutAlign="start" fxLayout.gt-xs="row"
+    fxLayoutAlign.gt-xs="space-between center">
+    <div class="ml-sm-32" fxLayout="row" fxLayoutAlign="center center" fxFlex>
+      <div class="search-wrapper mt-16 mt-sm-0">
+        <div class="search" fxFlex fxLayout="row" fxLayoutAlign="start center">
+          <mat-icon>search</mat-icon>
+          <input [formControl]="searchInput" placeholder="Buscar por nombre">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+
+    <div *ngFor="let pokemon of pokemons$ | async">
+        <div (click)="view(pokemon)">
+          <img [src]="pokemon.imageUrl" [alt]="pokemon.name" class="imagen">
+          <div class="pokemon-name" fxLayoutAlign="center center">{{pokemon.name | uppercase}}</div>
+          <div class="pokemon-order" fxLayoutAlign="center center">#{{pokemon.order | number: '3.0-0'}}</div>
+        </div>
+    </div>
+  
+  </div>
+
+  <mat-paginator [length]="pokemonService.total" [pageSize]="20" [pageSizeOptions]="[20]" (page)="paginate($event)">
+  </mat-paginator>
+</div>
