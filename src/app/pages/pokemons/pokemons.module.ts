@@ -12,6 +12,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatTabsModule } from '@angular/material/tabs';
 import { PipesModule } from '../../pipes/pipes.module';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 const routes: Routes = [
   {
@@ -44,6 +45,7 @@ const routes: Routes = [
     MatTabsModule,
     PipesModule,
     MatProgressBarModule,
+    MatToolbarModule,
     FlexLayoutModule,
     RouterModule.forChild(routes)
   ]

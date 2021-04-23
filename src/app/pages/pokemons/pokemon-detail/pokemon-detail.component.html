@@ -21,46 +21,44 @@
   </div>
 
   <div class="about-content" fxLayout="row wrap" fxLayoutAlign="space-around center">
-    <div class="profile-box info-box general" fxLayout="column">
+    <div class="profile-box" fxLayout="column">
 
-      <mat-tab-group mat-align-tabs="center">
+      <mat-tab-group mat-align-tabs="center" animationDuration="1000ms">
         <mat-tab label="Generales">
-          <div class="info-line" fxLayout="row" fxLayoutAlign="space-between center">
-            <div class="title">Peso</div>
-            <div class="info">{{pokemon?.weight | kiloFormater}}</div>
-          </div>
-          <div class="info-line" fxLayout="row" fxLayoutAlign="space-between center">
-            <div class="title">Altura</div>
-            <div class="info">{{pokemon?.height | metroFormater}}</div>
-          </div>
-          <div class="info-line" fxLayout="row" fxLayoutAlign="space-between center">
-            <div class="title">Habilidades</div>
-            <div class="info" *ngFor="let ab of pokemon?.abilities">{{ab.ability.name}}</div>
+          <div class="tab-content">
+            <div class="info-line" fxLayout="row" fxLayoutAlign="space-between center">
+              <div class="title">Peso</div>
+              <div class="info">{{pokemon?.weight | kiloFormater}}</div>
+            </div>
+            <div class="info-line" fxLayout="row" fxLayoutAlign="space-between center">
+              <div class="title">Altura</div>
+              <div class="info">{{pokemon?.height | metroFormater}}</div>
+            </div>
+            <div class="info-line" fxLayout="row" fxLayoutAlign="space-between center">
+              <div class="title">Habilidades</div>
+              <div class="info" *ngFor="let ab of pokemon?.abilities">{{ab.ability.name}}</div>
+            </div>
           </div>
         </mat-tab>
         <mat-tab label="Estadísticas">
-          <div *ngFor="let stat of pokemon?.stats" style="margin-top: 16px;">
+          <div *ngFor="let stat of pokemon?.stats" class="tab-content">
             <div fxLayout="row" fxLayoutAlign="space-between center">
-              <div class="title">{{stat.stat.name}}</div>
+              <div class="title">{{stat.stat.name | titlecase}}</div>
               <label class="example-value-label">{{stat.base_stat}}</label>
             </div>
             <mat-progress-bar mode="determinate" [value]="stat.base_stat"></mat-progress-bar>
           </div>
         </mat-tab>
-        <mat-tab label="Movimientos" style="overflow-y: hidden;">
-          <div class="moves" >
-            <mat-chip-list aria-label="Movimientos">
-              <div fxLayout="row wrap" fxLayoutAlign="space-between center">
-                <mat-chip *ngFor="let move of pokemon?.moves">{{move.move.name | titlecase}}
-                </mat-chip>
-              </div>
+        <mat-tab label="Movimientos">
+          <div class="tab-content" style="height: 300px;">
+            <mat-chip-list aria-label="Movimientos" fxLayout="column" fxLayoutAlign="center center">
+              <ng-container *ngFor="let move of pokemon?.moves; let i = index">
+                <mat-chip *ngIf="i<20" fxLayout="column" fxFlex.gt-xs="20" fxFlex.gt-sm="18" fxFlex.gt-md="10">{{move.move.name | titlecase}}</mat-chip>
+              </ng-container>
             </mat-chip-list>
           </div>
         </mat-tab>
       </mat-tab-group>
     </div>
-  </div>
-
-  <div fxFlex="100" fxFlex.gt-sm="50" fxFlex.gt-md="65">
   </div>
 </div>

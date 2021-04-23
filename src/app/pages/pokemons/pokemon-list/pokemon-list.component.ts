@@ -111,12 +111,14 @@ export class PokemonListComponent implements OnInit {
           };
         })
       )
-      .subscribe( (pokemon) => this.store.dispatch(researchPokemonList({ pokemon })));
+      .subscribe( (pokemon) => {
+        this.pokemonService.total = 1;
+        this.store.dispatch(researchPokemonList({ pokemon }));
+      });
   }
 
   paginate(event: any): void {
     this.skip = event.pageSize * event.pageIndex;
-    console.log(event, this.skip);
     this.getPokemons();
   }
 }

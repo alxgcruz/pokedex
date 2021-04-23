@@ -1,6 +1,5 @@
 .content {
   display: block !important;
-  height: 92vh;
   background: #f5f5f5;
 }
 
@@ -27,8 +26,8 @@
   margin-bottom: 16px;
 }
 
-.more {
-  cursor: pointer;
+.tab-content {
+  margin: 14px
 }
 
 .info-line {
