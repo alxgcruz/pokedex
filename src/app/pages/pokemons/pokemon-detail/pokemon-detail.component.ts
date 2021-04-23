@@ -4,7 +4,7 @@ import { select, Store } from '@ngrx/store';
 import { Pokemon } from '../pokemon-list/pokemon.model';
 import { PokemonService } from '../pokemon-list/pokemon-list.service';
 import { selectedPokemon } from 'src/app/state/pokemons.actions';
-import { NavigationService } from '../../services/navigation.service';
+import { NavigationService } from '../../../services/navigation.service';
 
 @Component({
   selector: 'app-pokemon-detail',
@@ -27,7 +27,7 @@ export class PokemonDetailComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this.navigation.showBackButton.next(true);
+    this.navigation.showItems.next({back: true, tool: true});
 
     this.nav.params.subscribe( params => {
       this.id = params.id;

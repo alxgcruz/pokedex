@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'splash', pathMatch: 'full' },
   {
     path: 'pokemons',
-    loadChildren: () => import('./pokemons/pokemons.module').then(m => m.PokemonsModule)
+    loadChildren: () => import('./pages/pokemons/pokemons.module').then(m => m.PokemonsModule)
   },
   {
     path: 'profile',
     component: ProfileComponent
   },
   {
-    path: '**',
-    redirectTo: 'pokemons'
+    path: 'splash',
+  loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashModule)
   }
 ];
 

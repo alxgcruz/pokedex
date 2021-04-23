@@ -1,5 +1,5 @@
 import { createReducer, on, Action } from '@ngrx/store';
-import { Pokemon, PokemonModel } from '../pokemons/pokemon-list/pokemon.model';
+import { Pokemon, PokemonModel } from '../pages/pokemons/pokemon-list/pokemon.model';
 import { retrievedPokemonList, selectedPokemon, researchPokemonList, emptyPokemonList } from './pokemons.actions';
 
 export const initialState: Array<Pokemon> = [];

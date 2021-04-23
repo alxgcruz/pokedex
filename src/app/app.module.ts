@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
 
 import { pokemonListReducer, pokemonSelectReducer } from './state/pokemons.reducer';
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 import { ComponentsModule } from './components/components.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatPaginatorIntl } from '@angular/material/paginator';
 import { MatPaginatorIntlMX } from './services/paginator.service';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { MatPaginatorIntlMX } from './services/paginator.service';
     HttpClientModule,
     ComponentsModule,
     FlexLayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

@@ -6,10 +6,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
 @Injectable({ providedIn: 'root' })
 export class NavigationService {
   private history: string[] = [];
-  showBackButton: BehaviorSubject<any>;
+  showItems: BehaviorSubject<any>;
 
   constructor(private router: Router, private location: Location) {
-    this.showBackButton = new BehaviorSubject(false);
+    this.showItems = new BehaviorSubject({back: false, tool: false});
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.history.push(event.urlAfterRedirects);

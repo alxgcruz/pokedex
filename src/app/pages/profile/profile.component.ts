@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationService } from '../services/navigation.service';
+import { NavigationService } from '../../services/navigation.service';
 
 @Component({
   selector: 'app-profile',
@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit {
   constructor(private navigation: NavigationService) { }
 
   ngOnInit(): void {
-    this.navigation.showBackButton.next(true);
+    this.navigation.showItems.next({back: true, tool: true});
   }
 
 }

@@ -5,10 +5,10 @@ import { PokemonService } from './pokemon-list.service';
 import { Observable } from 'rxjs';
 import { concatMap, debounceTime, distinctUntilChanged, map, mergeMap, tap } from 'rxjs/operators';
 import { Pokemon } from './pokemon.model';
-import { selectedPokemon, researchPokemonList, emptyPokemonList } from '../../state/pokemons.actions';
+import { selectedPokemon, researchPokemonList, emptyPokemonList } from '../../../state/pokemons.actions';
 import { Router } from '@angular/router';
 import { FormControl } from '@angular/forms';
-import { NavigationService } from '../../services/navigation.service';
+import { NavigationService } from '../../../services/navigation.service';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -33,7 +33,7 @@ export class PokemonListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.navigation.showBackButton.next(false);
+    this.navigation.showItems.next({back: false, tool: true});
     this.getPokemons();
 
     this.searchInput.valueChanges

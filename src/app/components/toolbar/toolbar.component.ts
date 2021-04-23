@@ -9,13 +9,17 @@ import { NavigationService } from 'src/app/services/navigation.service';
 export class ToolbarComponent implements OnInit {
 
   showButton = false;
+  showToolbar = false;
   title = 'Pokédex';
 
   constructor(private navigation: NavigationService) { }
 
   ngOnInit(): void {
-    this.navigation.showBackButton
-      .subscribe( bool => this.showButton = bool);
+    this.navigation.showItems
+      .subscribe( (items: {back: boolean, tool: boolean}) => {
+        this.showButton = items.back;
+        this.showToolbar = items.tool;
+      });
   }
 
   onBack(): void {

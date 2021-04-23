@@ -1,4 +1,4 @@
-<mat-toolbar color="light">
+<mat-toolbar color="light" *ngIf="showToolbar" layout="row" style="position: fixed;">
   <mat-toolbar-row>
     <button mat-icon-button aria-label="Abrir perfil" (click)="onBack()" *ngIf="showButton">
       <mat-icon>arrow_back_ios_new</mat-icon>

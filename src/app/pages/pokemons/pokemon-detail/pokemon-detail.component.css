@@ -1,37 +1,39 @@
-.header {
-  height: 30vh;
-  min-height: 30vh;
-  max-height: 30vh;
-  background: url("/pokedex/assets/images/dark-material-bg.jpg") no-repeat 0 45%;
-  background-size: cover;
+.content {
+  display: block !important;
+  height: 90vh;
+  background: #f5f5f5;
 }
-.name {
+
+.imagen {
+  width: 300px;
+  min-width: 300px;
+}
+.order {
+  font-size: 28px;
+  color: gray;
+  padding-bottom: 16px;
+}
+.name-black {
   font-size: 34px;
-  color: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  color: black;
+  padding-bottom: 16px;
 }
+
+
 
 .profile-box {
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 16px;
 }
-header {
-  padding: 16px;
-  font-size: 17px;
-}
 
 .more {
   cursor: pointer;
 }
 
-.content {
-  padding: 16px;
-}
-
 .info-line {
   margin-bottom: 24px;
+  margin-top: 24px;
 }
 .info-line:last-child {
   margin-bottom: 0;
@@ -41,16 +43,20 @@ header {
   font-weight: 600;
   padding-bottom: 4px;
 }
-.imagen {
-  width: 300px;
-  min-width: 300px;
-  padding-top: 120px;
-}
+
 .types {
   top: 200px;
   right: 10px;
 }
+mat-progress-bar {
+  margin-bottom: 14px;
+}
 
+.moves {
+  margin-top: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
 /* tipos */
 .fire {
   background: red;

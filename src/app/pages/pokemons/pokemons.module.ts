@@ -7,8 +7,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import {MatCardModule} from '@angular/material/card';
-import {MatChipsModule} from '@angular/material/chips';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatTabsModule } from '@angular/material/tabs';
+import { PipesModule } from '../../pipes/pipes.module';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 const routes: Routes = [
   {
@@ -38,6 +41,9 @@ const routes: Routes = [
     MatPaginatorModule,
     MatCardModule,
     MatChipsModule,
+    MatTabsModule,
+    PipesModule,
+    MatProgressBarModule,
     FlexLayoutModule,
     RouterModule.forChild(routes)
   ]
