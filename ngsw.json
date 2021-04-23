@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619156607357,
+  "timestamp": 1619167772966,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -12,14 +12,14 @@
       },
       "urls": [
         "./4.09f71f9eb06eae680ae9.js",
-        "./5.9fa6c776638f9f1e5b91.js",
+        "./5.b5efd64791835bf5ee90.js",
         "./favicon.ico",
         "./index.html",
-        "./main.4ffe200bca4cca721258.js",
+        "./main.6bed643b518bb0209953.js",
         "./manifest.webmanifest",
         "./polyfills.00096ed7d93ed26ee6df.js",
-        "./runtime.07e7ffe603c91189bb6a.js",
-        "./styles.7b24d4c0c7d7e30102d9.css"
+        "./runtime.febdf007942a08676825.js",
+        "./styles.3ea9c3d9630abb6fb80b.css"
       ],
       "patterns": []
     },
@@ -32,6 +32,8 @@
       },
       "urls": [
         "./assets/animations/pikachu.json",
+        "./assets/fonts/Pokemon Hollow.ttf",
+        "./assets/fonts/Pokemon Solid.ttf",
         "./assets/icons/icon-128x128.png",
         "./assets/icons/icon-144x144.png",
         "./assets/icons/icon-152x152.png",
@@ -48,8 +50,10 @@
   "dataGroups": [],
   "hashTable": {
     "./4.09f71f9eb06eae680ae9.js": "5ebf2d9788f1b1562f11ab1370263c61053fe261",
-    "./5.9fa6c776638f9f1e5b91.js": "0dba999317def6cb878577d1f8e25268bfac2c1a",
+    "./5.b5efd64791835bf5ee90.js": "5ae5e5cacaa54b8f00d6ccbe9b5766c869d88b1d",
     "./assets/animations/pikachu.json": "8a3b94a71dfe098e5bc8daa3826e249eac2ed5bf",
+    "./assets/fonts/Pokemon Hollow.ttf": "0d9951d3380b31319e2de9546dfd96a399b56f71",
+    "./assets/fonts/Pokemon Solid.ttf": "604b78675e244487f0efd80662ac5b899353b80e",
     "./assets/icons/icon-128x128.png": "d914e114f2bcb0a1526dfc65c1730da258a6f748",
     "./assets/icons/icon-144x144.png": "af5e2cae9793655e77d46f6f5f60eb903768640b",
     "./assets/icons/icon-152x152.png": "5575b5520dbd1e170da23f204753bbebf301860b",
@@ -60,12 +64,12 @@
     "./assets/icons/icon-96x96.png": "cf2a772fe91cb81468f6a84c17680e3fa3dbb158",
     "./assets/images/dark-material-bg.jpg": "dbd69d49703f43ff5840f26a7ad2aa5e59240afe",
     "./favicon.ico": "c8a8219776c83970aa6cfa3793d4cc67281df806",
-    "./index.html": "44a96cd12a9efbe8abdb43a03ff7b91bee018068",
-    "./main.4ffe200bca4cca721258.js": "e5a108bec2849562053de6f4c1df08963736e30d",
+    "./index.html": "e29c9ac707a4f34b9e7518d9371bf1431a2fe61e",
+    "./main.6bed643b518bb0209953.js": "18b5656690f551fc1aadb64fb2c8f5bfa04dcce1",
     "./manifest.webmanifest": "2b3cb9698d8f8a7914f26f5388087dd00d870ac9",
     "./polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "./runtime.07e7ffe603c91189bb6a.js": "2e1a1ffae5fd12d938e2a0f285594801e87d3d52",
-    "./styles.7b24d4c0c7d7e30102d9.css": "5b2b0798d739561e95aebab9c19faccad23d76a7"
+    "./runtime.febdf007942a08676825.js": "f4c06a2978ea1d8d4900bbfe094ace5cb1c1ce45",
+    "./styles.3ea9c3d9630abb6fb80b.css": "8b0ebb0a90057cccd4d39af073faded67fae2e4d"
   },
   "navigationUrls": [
     {
