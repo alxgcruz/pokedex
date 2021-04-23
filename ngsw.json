@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619156258624,
+  "timestamp": 1619156607357,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "./5.9fa6c776638f9f1e5b91.js",
         "./favicon.ico",
         "./index.html",
-        "./main.4039ec8d909c35eb030e.js",
+        "./main.4ffe200bca4cca721258.js",
         "./manifest.webmanifest",
         "./polyfills.00096ed7d93ed26ee6df.js",
         "./runtime.07e7ffe603c91189bb6a.js",
@@ -60,8 +60,8 @@
     "./assets/icons/icon-96x96.png": "cf2a772fe91cb81468f6a84c17680e3fa3dbb158",
     "./assets/images/dark-material-bg.jpg": "dbd69d49703f43ff5840f26a7ad2aa5e59240afe",
     "./favicon.ico": "c8a8219776c83970aa6cfa3793d4cc67281df806",
-    "./index.html": "7e9e18fed840322344811b55d5708af43d732287",
-    "./main.4039ec8d909c35eb030e.js": "dbe8a3e6d1fe25e21135c425d72748fac99df5f5",
+    "./index.html": "44a96cd12a9efbe8abdb43a03ff7b91bee018068",
+    "./main.4ffe200bca4cca721258.js": "e5a108bec2849562053de6f4c1df08963736e30d",
     "./manifest.webmanifest": "2b3cb9698d8f8a7914f26f5388087dd00d870ac9",
     "./polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "./runtime.07e7ffe603c91189bb6a.js": "2e1a1ffae5fd12d938e2a0f285594801e87d3d52",
