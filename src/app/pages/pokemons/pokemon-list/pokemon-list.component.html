@@ -1,32 +1,32 @@
 <div class="content">
   <mat-toolbar>
-  <mat-toolbar-row fxLayout="column" fxLayoutAlign="start"
-  fxLayoutAlign.gt-xs="space-between center">
-    <div class="header">
-      <div class="header-search" fxLayout="row" fxLayoutAlign="center center" fxFlex>
-        <div class="search-wrapper mt-16 mt-sm-0">
-          <div class="search" fxFlex fxLayout="row" fxLayoutAlign="start center">
-            <mat-icon>search</mat-icon>
-            <input [formControl]="searchInput" placeholder="Buscar por nombre">
+    <mat-toolbar-row fxLayout="column" fxLayoutAlign="start" fxLayoutAlign.gt-xs="space-between center">
+      <div class="header">
+        <div class="header-search" fxLayout="row" fxLayoutAlign="center center" fxFlex>
+          <div class="search-wrapper mt-16 mt-sm-0">
+            <div class="search" fxFlex fxLayout="row" fxLayoutAlign="start center">
+              <mat-icon>search</mat-icon>
+              <input [formControl]="searchInput" placeholder="Buscar por nombre">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </mat-toolbar-row>
-</mat-toolbar>
+    </mat-toolbar-row>
+  </mat-toolbar>
 
 
 
   <div style="padding-top: 40px;" fxLayout="row wrap" fxLayoutAlign="center center">
 
     <div *ngFor="let pokemon of pokemons$ | async">
-        <div (click)="view(pokemon)">
-          <img [src]="pokemon.imageUrl" [alt]="pokemon.name" ngClass.xs="imagen-small" ngClass.gt-sm="imagen">
-          <div fxLayoutAlign="center center" ngClass.xs="pokemon-name-small" ngClass.gt-sm="pokemon-name">{{pokemon.name | uppercase}}</div>
-          <div class="pokemon-order" fxLayoutAlign="center center">#{{pokemon.order | number: '3.0-0'}}</div>
-        </div>
+      <div (click)="view(pokemon)">
+        <img [src]="pokemon.imageUrl" [alt]="pokemon.name" ngClass.xs="imagen-small" ngClass.gt-sm="imagen">
+        <div fxLayoutAlign="center center" ngClass.xs="pokemon-name-small" ngClass.gt-sm="pokemon-name">{{pokemon.name |
+          uppercase}}</div>
+        <div class="pokemon-order" fxLayoutAlign="center center">#{{pokemon.order | number: '3.0-0'}}</div>
+      </div>
     </div>
-  
+
   </div>
 
   <mat-paginator [length]="pokemonService.total" [pageSize]="20" [pageSizeOptions]="[20]" (page)="paginate($event)">

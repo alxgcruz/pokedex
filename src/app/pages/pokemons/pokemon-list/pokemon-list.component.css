@@ -10,6 +10,7 @@ div {
 mat-toolbar {
   position: fixed;
   background: transparent;
+  margin-left: -10px;
 }
 .content {
   max-width: 100%;
