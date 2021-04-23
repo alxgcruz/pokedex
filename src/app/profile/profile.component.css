@@ -2,7 +2,7 @@
   height: 30vh;
   min-height: 30vh;
   max-height: 30vh;
-  background: url('/assets/images/dark-material-bg.jpg') no-repeat 0 45%;
+  background: url('/pokedex/assets/images/dark-material-bg.jpg') no-repeat 0 45%;
   background-size: cover;
 }
 .name {
