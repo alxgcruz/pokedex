@@ -8,6 +8,10 @@ export interface Pokemon {
   url: string;
   sprites: any;
   types: any;
+  stats: any;
+  moves: any;
+  weight: number;
+  abilities: any;
   imageUrl: string;
 }
 
@@ -22,6 +26,10 @@ export class PokemonModel {
   url: string;
   sprites: any;
   types: any;
+  stats: any;
+  moves: any;
+  weight: number;
+  abilities: any;
   imageUrl: string;
 
   constructor(
@@ -34,6 +42,10 @@ export class PokemonModel {
     url: string,
     sprites: any,
     types: any,
+    stats: any,
+    moves: any,
+    weight: number,
+    abilities: any,
     imageUrl: string
   ){
     this.id = id;
@@ -45,6 +57,10 @@ export class PokemonModel {
     this.url = url;
     this.sprites = sprites;
     this.types = types;
+    this.stats = stats;
+    this.moves = moves;
+    this.weight = weight;
+    this.abilities = abilities;
     this.imageUrl = imageUrl;
   }
 }

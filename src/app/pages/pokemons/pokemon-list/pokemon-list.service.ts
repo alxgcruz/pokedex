@@ -16,7 +16,7 @@ export class PokemonService {
   getPokemonsList(skip: number): Observable<Array<Pokemon>> {
     return this.http
       .get<{ count: number, results: Pokemon[] }>(
-        `https://pokeapi.co/api/v2/pokemon?offset=${skip}&limit=10`
+        `https://pokeapi.co/api/v2/pokemon?offset=${skip}&limit=20`
       )
       .pipe(
         map( (pokemons) => {

@@ -74,8 +74,13 @@ export class PokemonListComponent implements OnInit {
                   ...pokemon,
                   id: detail.id,
                   sprites: detail.sprites,
+                  stats: detail.stats,
+                  moves: detail.moves,
                   types: detail.types,
                   order: detail.order,
+                  weight: detail.weight,
+                  height: detail.height,
+                  abilities: detail.abilities,
                   imageUrl: detail.sprites.front_default
                 };
               })
@@ -95,8 +100,13 @@ export class PokemonListComponent implements OnInit {
             ...detail,
             id: detail.id,
             sprites: detail.sprites,
+            stats: detail.stats,
+            moves: detail.moves,
             types: detail.types,
             order: detail.order,
+            weight: detail.weight,
+            height: detail.height,
+            abilities: detail.abilities,
             imageUrl: detail.sprites.front_default
           };
         })
